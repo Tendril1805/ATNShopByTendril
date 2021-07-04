@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<body>
+    {{>header  title=this.title}}
+
+    <main>
+        <H1>{{title}}</H1>
+        <div class="container" >
+            <p>
+            <br></br>
+            
+            <br></br>
+            <center><img width=200px height=200px src="/img/logoATN_1.jpg" /></center>
+                <h1>Content in this website</h1>
+                <ol>
+                    {{#each func}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ol>
+            </p>
+        </div>
+    </main>
+            <br></br>
+            <br></br>
+    {{>footer}}
+</body>
+
+</html>

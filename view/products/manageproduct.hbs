@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+            <head>
+                <title>Adding Borders and Paddings to HTML Tables</title>
+                <style>
+                table, th, td {
+                border: 3px solid black;
+                }
+                th, td {
+                padding: 10px;
+                }
+                </style>
+            </head>
+            <head>
+            <title>Font Awesome 5 Icons</title>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+            <!--Get your own code at fontawesome.com-->
+            </head>
+<body>
+    {{>header  title=this.title}}
+
+    <main>
+        <br></br>
+        <br></br>        
+        <H1>{{title}}</H1>
+        <ol>
+            <h2></h2>
+            <table>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Image</th>
+                <th> </th>
+            </tr>
+            {{#each product}}
+            <tr>
+                <td>{{Product_Code}}</td>
+                <td>{{Product_Name}}</td>
+                <td>{{Price}}</td>
+                <td>{{quantity}}</td>
+                <td><img height="100px" src="/img/{{image}}"></td>
+                <td><a href="/product/Updateform/{{_id}}" ><i style='font-size:24px' class='fas' >&#xf044;</i></a>
+                    <a href="/product/Delete/{{_id}}" onclick="return confirm('Are you sure ?')"><i style='font-size:24px' class='far' >&#xf2ed;</i></a>
+                </td>
+            </tr>
+            {{/each}}
+            </table>
+        </ol>
+    </main>
+    <br>
+    <br>
+    {{>footer}}
+</body>
+
+</html>

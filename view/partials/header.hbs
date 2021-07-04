@@ -1,0 +1,79 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <img width=60px src="/img/logoATN.jpg" /><a class="navbar-brand" href="#">Tendril ATN SHOP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .dropbtn {
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000ad;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #ffffffad;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: #ffffffad;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {background-color: hsl(60, 3%, 21%);}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: hsl(61, 100%, 50%);}
+    </style>
+
+
+            <li class="nav-item">
+                <a class="dropbtn" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="dropbtn" href="/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="dropbtn" href="/login">Login</a>
+            </li>
+            <div class="dropdown">
+            <a class="dropbtn">Product</a>
+            <div class="dropdown-content">
+                <a href="/product">View</a>
+                <a href="/product/new">Create</a>
+                <a href="/product/edit">Modify</a>
+            </div>
+            </div>
+            <li class="nav-item">
+                <a class="dropbtn" href="/order">Order</a>
+            </li>           
+            <li class="nav-item">
+                <a class="dropbtn" href="/payment">Payment</a>
+            </li>
+            <li class="nav-item">
+                <a class="dropbtn" href="/report">Report</a>
+            </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>

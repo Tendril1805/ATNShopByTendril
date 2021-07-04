@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<body>
+    {{>header  title=this.title}}
+
+    <main>
+        <H1>{{title}}</H1>
+            <div class="imgcontainer">
+                <center>
+                    <img  width=300px height=300px src="/img/logoATN_1.jpg" alt="Avatar" class="avatar">
+                </center>
+                
+            </div>
+            <br></br>
+        <div class="container" >
+            <br></br>
+            <br></br>
+            <li>ABOUT THIS SHOP</li>
+            <a>ATN is a Vietnamese company which is selling toys to teenagers in many provinces all over Vietnam. </a>
+            <a>The company has the revenue over 700.000 dollars/year. Currently each shop has its own database to store transactions for that shop only. </a>
+            <a>Each shop has to send the sale data to the board director monthly and the board director need lots of time to summarize the data collected from all the shops. </a>
+            <a>Besides the board can’t see the stock information update in real time.</a>
+        </div>
+    </main>
+    
+            <br></br>
+            <br></br>
+    {{>footer}}
+</body>
+
+</html>

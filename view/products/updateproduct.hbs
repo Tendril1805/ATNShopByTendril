@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<body>
+    {{>header  title=this.title}}
+<br>
+<br>
+<br>
+    <main>
+        <div class="container">
+            <H1 height="150px">{{title}}</H1>
+            <form action="/{{_id}}" method="PUT" >
+                <BR> ProductCode:
+                <input value={{product1.Product_Code}} type="text" class="form-control" name="Product_Code" id="Product_Code1" >
+                <BR> ProductName:
+                <input value={{product1.Product_Name}} type="text" class="form-control" name="Product_Name" id="Product_Name1">
+                <BR> Price:
+                <input value={{product1.Price}} type="number" class="form-control" name="Price" id="Price1">
+                <BR> Describe:
+                <textarea  value={{product1.Describe}} type="text" class="form-control" name="Describe" id="Describe1" rows="3"></textarea>
+                <BR> Made In:
+                <input value={{product1.MadeIn}} type="text" class="form-control" name="MadeIn" id="MadeIn1">
+                <BR> Quantity:
+                <input value={{product1.quantity}} type="text" class="form-control" name="quantity" id="quantity1">
+                <BR> <label for="image">Select image:</label>
+                <input value={{product1.image}} type="file" name="image" id="image1" accept="/img/*">
+                <br>
+                <input type="submit" class="btn btn-primary" value="Update">
+
+            </form>
+        </div>        
+    </main>
+    <br>
+    <br>
+    {{>footer}}
+</body>
+
+</html>

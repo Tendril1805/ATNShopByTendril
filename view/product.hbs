@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<body>
+    {{>header  title=this.title}}
+
+    <main>
+        <br></br>
+        <br></br>        
+        <H1>{{title}}</H1>
+        <ol>
+            <br>
+            {{#each product}}
+            <li>
+                <div>
+                    <H5>Code: {{Product_Code}}</H2>
+                    <H5>Name: {{Product_Name}}</H3>
+                    <H5>Made in: {{MadeIn}}</H4>
+                    <H5>Price: {{Price}}</H5>
+                    <H5>Quantity: {{quantity}}</H6>
+                    <H5>Product information</H7> 
+                    <p>
+                        {{Describe}}
+                    </p>
+                    <img height="400px" src="/img/{{image}}">
+                </div>
+                <br>
+            </li>
+            {{/each}}
+        </ol>
+    </main>
+    
+
+    {{>footer}}
+</body>
+
+</html>
